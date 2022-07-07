@@ -95,29 +95,20 @@ $positions: (("t", "top"), ("r", "right"), ("b", "bottom"), ("l", "left"));
       font-size: rem(20px) !important;
     }
   }
-  &-llg {
-    font-size: rem(20px) !important;
-    @include media-breakpoint-down(md) {
-      font-size: rem(18px) !important;
-    }
-  }
   &-md {
     font-size: rem(20px) !important;
   }
   &-sm {
-    font-size: rem(18px) !important;
+    font-size: rem(16px) !important;
     @include media-breakpoint-down(lg) {
-      font-size: rem(16px) !important;
-    }
-    @include media-breakpoint-down(md) {
       font-size: rem(14px) !important;
     }
-  }
-  &-xs {
-    font-size: 15px !important;
     @include media-breakpoint-down(md) {
       font-size: rem(12px) !important;
     }
+  }
+  &-xs {
+    font-size: 10px !important;
   }
 }
 
