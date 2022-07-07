@@ -3,11 +3,11 @@
     .container
         .d-flex.align-items-center
             span.fs-lg.text-white(to="/") Logo
-            ul.py-0.pl-5.m-0.d-flex.flex-wrap.align-items-center(v-if="questions && questions.length")
-                li.px-2: span(:class="getAnsweredQuestions.length > 0 && getAnsweredQuestions.length < questions.length ? 'text-white':''") Previous
-                li.px-2(:class="getAnsweredQuestions.length != questions.length ? 'text-white':''"): p.mb-0 #[i.mr-1.fa-solid.fa-circle-exclamation(:class="lengthClassStatus")] {{getAnsweredQuestions.length || '0'}} /10
-                li.px-2: span(:class="getAnsweredQuestions.length < questions.length ? 'text-white':''") Next
-                li.px-2: span(:class="getAnsweredQuestions.length == questions.length ? 'text-white':''") Results
+            ul.py-0.pl-md-5.pl-2.m-0.d-flex.flex-wrap.align-items-center(v-if="questions && questions.length")
+                li.px-2.fs-sm: span(:class="getAnsweredQuestions.length > 0 && getAnsweredQuestions.length < questions.length ? 'text-white':''") Previous
+                li.px-2.fs-sm(:class="getAnsweredQuestions.length != questions.length ? 'text-white':''"): p.mb-0 #[i.mr-1.fa-solid.fa-circle-exclamation(:class="lengthClassStatus")] {{getAnsweredQuestions.length || '0'}} /10
+                li.px-2.fs-sm: span(:class="getAnsweredQuestions.length < questions.length ? 'text-white':''") Next
+                li.px-2.fs-sm: span(:class="getAnsweredQuestions.length == questions.length ? 'text-white':''") Results
             .d-flex.ml-3(v-else)
                 Loading(color="white")
 </template>
