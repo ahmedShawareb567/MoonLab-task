@@ -1,0 +1,105 @@
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+) !default;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1200px,
+  xxl: 1400px,
+) !default;
+
+$enable-shadows: true;
+// $font-size-base: 0.75rem;
+$primary: #3e38a5;
+$secondary: #07d1df;
+$info: #c6c8ca;
+$warning: #ffc107;
+$danger: #ff0000;
+$success: #13c454;
+$dark: #000;
+$gray-200: #f7f7fa;
+$gray-300: #f5f5ff;
+$gray-400: #ececfb;
+$gray-500: #999696;
+$gray-600: #777777;
+$component-active-bg: $secondary;
+$popover-border-color: $gray-400;
+$popover-header-bg: $gray-400;
+$pagination-border-color: $gray-400;
+$pagination-hover-border-color: $gray-400;
+$pagination-disabled-border-color: $gray-400;
+$body-color: #595454;
+$link-color: inherit;
+$link-hover-color: $primary;
+$link-hover-decoration: none;
+$box-shadow-sm: 0px 2px 8px rgba(33, 33, 33, 0.1);
+$box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+$font-family-base: "TheSansArabic", sans-serif;
+$border-color: $dark;
+$input-btn-padding-x: 1.2rem;
+$btn-font-weight: 300;
+$border-radius: 0;
+$border-radius-lg: 10px;
+$font-weight-medium: 400;
+$headings-font-weight: 700;
+$font-weight-lighter: 400;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$font-weight-bolder: 400;
+$input-placeholder-color: rgba(#919191, 0.44);
+$input-box-shadow: unset;
+$form-select-box-shadow: unset;
+$plyr-color-main: $primary;
+$input-btn-border-width: 0.15rem;
+$input-border-color: rgba(0, 0, 0, 0.1);
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+
+// mixins
+@function aspectRatio($width, $height) {
+  @return ($height / $width) * 100%;
+}
+@function rem($size) {
+  @return $size / 16px * 1rem;
+}
+
+@mixin scrollBar {
+  &::-webkit-scrollbar {
+    width: 0.5em;
+    height: 0.5em;
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: none;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba($primary, 0.5);
+    outline: 0 solid $gray-400;
+    border-radius: 20em;
+
+    &:hover {
+      background: rgba($primary, 0.8);
+    }
+  }
+}
+
+$input-background: #f7f7f7;
+
+// socials
+$google: #ea4335;
+$facebook: #3b5998;
+$twitter: #16b9f5;
+$linkedin: #007ab9;
+$instagram: #c32aa3;
+$header-height: rem(100px);

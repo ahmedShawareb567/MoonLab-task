@@ -1,0 +1,21 @@
+/* rtl:begin:ignore */
+[dir='rtl'] {
+  body {
+    text-align: right;
+  }
+  .form-control {
+    &.is-invalid:focus,
+    &.is-invalid {
+      padding-left: calc(1.5em + 0.75rem) !important;
+      padding-right: 1.2rem !important;
+      background-position: left calc(0.375em + 0.1875rem) center;
+    }
+  }
+  select {
+    &.form-control {
+      background-position: left calc(0.375em + 0.8rem) center !important;
+    }
+  }
+}
+
+/* rtl:end:ignore */
